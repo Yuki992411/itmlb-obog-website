@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Webページ作成
+
+## 環境構築
+
+前提条件：`Docker`と`docker-compose`がインストールされている
+
+```bash
+git clone git@github.com:Yuki992411/itmlb-obog-website.git
+cd itmlb-obog-website
+docker-compose build --no-cache
+docker-compose run web yarn install
+docker-compose up
+```
+
+上記のコマンドを入力した後，ブラウザで`http://localhost:8000`を打てば，Reactのデフォルトページが閲覧できる．
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
