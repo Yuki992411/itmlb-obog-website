@@ -1,0 +1,10 @@
+services:
+  web:
+    container_name: itmlb-obog-website
+    build: .
+    volumes:
+      - ./:/app
+    # command: sh -c "npx create-react-app --template typescript web-app && cd web-app && yarn add prettier eslint @typescript-eslint/eslint-plugin eslint-plugin-prettier eslint-config-prettier eslint-plugin-react @material-ui/core @material-ui/icons"
+    command: sh -c "yarn start"
+    ports:
+      - "8000:3000"
